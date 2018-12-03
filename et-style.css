@@ -1,0 +1,49 @@
+/* Some basic styling for the Mars Web App */
+
+body {
+    background-color: #ffa366;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+.jumbotron, .footer {
+    background-color: #e6e6e6;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 5 px;
+    font-size: 11px;
+}
+
+.et-blurb {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+} 
+
+.btn, .btn-lg {
+    background-color: #ff1a1a;
+}
+
+a:hover {
+    background-color: #ffcccc;
+}
+
+/* specific bordering for home page */
+.et-img-border-home {
+    padding: 15px;
+}
+
+.et-img-border-home:hover {
+    background-color: #ff6666;
+    border: 5px;
+}
+
+/* media queries */ 
+@media (max-width: 480px) {
+    .navbar li {
+      padding: 10px;
+    }
+  }

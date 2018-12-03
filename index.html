@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Scraping App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="et-style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="jumbotron"> <!-- Homescreen message -->
+            <h1>Mars Mission Web Scraper</h1>
+                <p>Use this app to scrape the latest information from:</p>
+                    <ul>
+                        <li>the <a href="https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest" target="_blank">NASA Mars News Site</a></li>
+                        <li>the daily<a href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" target="_blank">JPL Featured Mars Space Image</a></li>
+                        <li>the Mars Weather <a href="https://twitter.com/marswxreport?lang=en" target="_blank">Twitter account</a></li>
+                        <li>some Mars facts from <a href="https://space-facts.com/mars/" target="_blank">Space-Facts.com</a></li>
+                        <li>some high resolution images from the <a href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars" target="_blank">USGS Astrogeology site</a>.</li>
+                    </ul>
+            <div class="text-center">
+                <a class="btn btn-lg btn-primary" href="#" role="button" target="_blank"><span class=" glyphicon glyphicon-off" aria-hidden="true"></span> Let the Astoundment Commence</a>
+            </div>
+        </div> 
+        
+        <div class="row"> <!-- Latest Mars News, next to Featured Mars Image -->
+            <div class="col-md-12">  
+                <div class="panel panel-info">
+                    <div class="panel-body">
+                        <h2>Latest Mars News</h2>
+                        <hr>
+                        
+                        </div>
+                    </div>
+                </div> <!-- /.panel -->
+            </div>
+
+
+        <div class="row"> <!-- Current Weather, next to Mars Facts -->
+            <div class="col-md-12">  
+                <div class="panel panel-info">
+                    <div class="panel-body">
+                        <h2>Current Weather</h2>
+                        <hr>
+                        
+                    </div>
+                </div>
+            </div> <!-- /.panel -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">  <!-- Mars Hemispheres -->
+                <div class="panel panel-info">
+                    <div class="panel-body">
+                        <h2>Hi Res Mars Hemispheres</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 et-img-border-home"><a href="#"><img class="img img-responsive" src="#" style="width:100%" alt="#"></a></div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 et-img-border-home"><a href="#"><img class="img img-responsive" src="#" style="width:100%" alt="#"></a></div>
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 et-img-border-home"><a href="#"><img class="img img-responsive" src="#" style="width:100%" alt="#"></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 et-img-border-home"><a href="#"><img class="img img-responsive" src="#" style="width:100%" alt="#"></a></div>
+                        </div>
+                    </div>
+                </div> <!-- /.panel -->
+            </div>
+        </div> <!-- /.row -->
+
+    </div> <!-- /.container (main) -->
+
+    <div class="container footer">
+        <div class="col-md-12">  
+            <p>Emmanuel Edward Te &copy; 2017-2019</p>
+            <p>For educational purposes only. In fulfillment of UC Berkeley Extension Data Analytics Bootcamp 2018-2019.</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+            <br>
+            <p>Site design created with <a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap <img src="https://getbootstrap.com/docs/3.3/assets/brand/bootstrap-solid.svg" style="height:22px; width:auto; padding:2px;"> 3.3.7</a>. Additional symbols from <a href="https://www.glyphicons.com/" target="_blank">Glyphicons</a>.</p>
+        </div>
+    </div>  <!-- /.container (footer) -->
+    
+    <!-- Bootstrap core Javascript parts  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://bootstrapdocs.com/v3.3.6/docs/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://bootstrapdocs.com/v3.3.6/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
