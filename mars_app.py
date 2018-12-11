@@ -12,8 +12,6 @@ app = Flask(__name__)
 # set up Mongo connection
 mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_app")
 
-
-
 # # Flask routes
 @app.route("/")
 def home():
