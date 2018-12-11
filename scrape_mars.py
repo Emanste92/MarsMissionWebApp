@@ -97,7 +97,7 @@ def mars_scrapes():
     sleep(2)
     
     # storing data
-    scraped_mars_info = {
+    mars_info_data = {
         # NASA Mars News
         "latest_news_date": latest_news_date,
         "latest_news_headline": latest_news_headline,
@@ -116,7 +116,7 @@ def mars_scrapes():
 
     browser.quit()
 
-    return scraped_mars_info
+    return mars_info_data
     
     
     

@@ -22,36 +22,59 @@
                         <li>some high resolution images from the <a href="https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars" target="_blank">USGS Astrogeology site</a>.</li>
                     </ul>
             <div class="text-center">
-                <a class="btn btn-lg btn-primary" href="#" role="button" target="_blank"><span class=" glyphicon glyphicon-off" aria-hidden="true"></span> Let the Astoundment Commence</a>
+                <a class="btn btn-lg btn-primary" href="/scrape" role="button"><span class=" glyphicon glyphicon-off" aria-hidden="true"></span> Let the Astoundment Commence</a>
             </div>
         </div> 
-        
+
         <div class="row"> <!-- Latest Mars News, next to Featured Mars Image -->
-            <div class="col-md-12">  
+            <div class="col-md-7">  
                 <div class="panel panel-info">
                     <div class="panel-body">
                         <h2>Latest Mars News</h2>
                         <hr>
-                        
-                        </div>
+                        <p>{{mars_info.latest_news_date}}</p>
+                        <p>{{mars_info.latest_news_headline}}</p>
+                        <p>{{mars_info.latest_news_teaser}}</p>
+                        <p>Full story <a href="{{mars_info.latest_news_url}}" target ="_blank">here</a>.</p>                        
                     </div>
-                </div> <!-- /.panel -->
-            </div>
+                </div>
+            </div> <!-- /. news panel -->
+            <div class="col-md-5">  <!-- Latest JPL Image -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>Latest Image from the JPL</h2>
+                        <hr>
+                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8"><a href="{{mars_info.jpl_url}}"><span class="border border-dark"><img class="img img-responsive" src="{{mars_info.jpl_url}}" style="width:100%"></span></a></div>
+                    </div>
+                </div>
+            </div> <!-- /. JPL image panel -->
+        </div>
 
 
         <div class="row"> <!-- Current Weather, next to Mars Facts -->
-            <div class="col-md-12">  
+            <div class="col-md-6">  
                 <div class="panel panel-info">
                     <div class="panel-body">
                         <h2>Current Weather</h2>
                         <hr>
-                        
+                        <p>{{mars_info.tweet_weather_date}}</p>
+                        <p>{{mars_info.tweet_weather_report}}</p>                        
                     </div>
                 </div>
-            </div> <!-- /.panel -->
+            </div> <!-- /. weather panel -->
+            <div class="col-md-6">  <!-- not sure what formatting is required for table-->
+                <div class="panel panel-info"> 
+                    <div class="panel-body">
+                        <h2>Mars Facts</h2>
+                        <hr>
+                        <p>{{mars_info.fact_table}}</p>                     
+                    </div>
+                </div>
+            </div> <!-- /. weather panel -->
         </div>
 
-        <div class="row">
+        <!-- not sure how to put in the hi_res_hemis into all this -->
+        <div class="row">   
             <div class="col-md-12">  <!-- Mars Hemispheres -->
                 <div class="panel panel-info">
                     <div class="panel-body">
@@ -69,7 +92,6 @@
                 </div> <!-- /.panel -->
             </div>
         </div> <!-- /.row -->
-
     </div> <!-- /.container (main) -->
 
     <div class="container footer">
